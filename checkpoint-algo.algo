@@ -1,0 +1,30 @@
+ALGORITHM checkpoint
+VAR
+     sentence : STRING
+     nbr-of-words : INTEGER :=1
+     nbr-of-CHAR : INTEGER
+     nbr-of-vowels : INTEGER
+     vowels : STRING := [e ,a,u,i,o,y]
+    set_declarations
+BEGIN
+   BEGIN
+    read (sentence)
+    nbr-of-CHAR :=sentence.length
+    END
+    FOR  (i=0 ;i<=nbr-of-CHAR; i++)
+    IF (sentence[i]:=" ") THEN
+    nbr-of-words++
+        set_instructions
+    END_IF
+
+
+    END_FOR
+    FOR   (i=0 ;i<=nbr-of-CHAR; i++) DO
+    IF (vowels contain sentence[i]) THEN
+    nbr-of-vowels++
+        set_instructions
+    END_IF
+        set_instructions
+    END_FOR
+
+END
